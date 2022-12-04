@@ -27,7 +27,11 @@ def display():
 
 def run():
 
+    # X = 4 * np.random.rand(100, 1) - 2  # Generates random values between 0 and 1
+    # y = 2*X + np.random.randn(100, 1)
+
     df = 0.5 * pd.DataFrame(np.random.randint(0, 100, size=(90, 2)), columns=list('AB'))
+
     data = df.to_csv()
     print(df)
     columns = df.columns.values.tolist()
